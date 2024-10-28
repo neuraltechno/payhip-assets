@@ -1,0 +1,89 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+td {
+    padding: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    vertical-align: top;
+    width: 25%;
+    box-sizing: border-box;
+}
+.twitter-embed {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.twitter-embed iframe {
+    width: 100% !important;
+    max-width: 300px !important;
+}
+@media screen and (max-width: 1200px) {
+    td {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .twitter-embed {
+        max-width: 250px;
+    }
+    .twitter-embed iframe {
+        max-width: 250px !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .twitter-embed {
+        max-width: 220px;
+    }
+    .twitter-embed iframe {
+        max-width: 220px !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    td {
+        width: 100%;
+    }
+    .twitter-embed {
+        max-width: 250px;
+    }
+    .twitter-embed iframe {
+        max-width: 250px !important;
+    }
+}
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.nav-button {
+    padding: 10px 20px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.nav-button:hover {
+    background-color: #0c85d0;
+}
+.nav-button:active {
+    background-color: #0a6baa;
+}
+.nav-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.5);
+}
+.nav-button:visited {
+    color: white;
+}
