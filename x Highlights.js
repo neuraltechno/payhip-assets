@@ -7,6 +7,7 @@ function scrollToSection(sectionId) {
 }
 
 async function fetchTwitterHighlights() {
+    console.log('fetchTwitterHighlights function called');
     try {
         // Replace this URL with your actual Render service URL
         const renderURL = 'https://payhip-proxy-server.onrender.com/api/twitter-highlights';
